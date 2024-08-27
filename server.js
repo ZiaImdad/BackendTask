@@ -44,6 +44,10 @@ app.use('/api/studentcourse', studentcourseRoute);
 app.use('/api/student', studentRoute);
 app.use('/api/userLogin', userLogin);
 
+
+app.get('/',(req,res)=>{
+  res.json({message:"Hello world from backend!"})
+})
 // Start the server
 const PORT = process.env.PORT || 5500;
 app.listen(PORT, () => {

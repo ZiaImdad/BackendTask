@@ -2,10 +2,9 @@
   "name": "nodejs-practice",
   "version": "1.0.0",
   "description": "learning node js",
-  "main": "server.jsx",
+  "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "server": "nodemon server.js"
+    "start": "nodemon server.js"
   },
   "author": "zia imdad",
   "license": "ISC",

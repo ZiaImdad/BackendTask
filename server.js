@@ -16,7 +16,7 @@ app.use(cors());
 
 // CORS Configuration
 app.use(cors({
-  origin: 'http://localhost:3000', // Restrict to your frontend origin
+  origin: 'https://medpathway.vercel.app', // Restrict to your frontend origin
   credentials: true, // Allow credentials like cookies and authorization headers
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Allowed methods
   allowedHeaders: ['Content-Type', 'Authorization'] // Headers that your frontend will send
@@ -24,7 +24,7 @@ app.use(cors({
 
 // Handle preflight requests
 app.options('*', cors({
-  origin: 'http://localhost:3000',
+  origin: 'https://medpathway.vercel.app',
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
@@ -49,7 +49,7 @@ app.get('/',(req,res)=>{
   res.json({message:"Hello world from backend!"})
 })
 // Start the server
-const PORT = process.env.PORT || 5500;
+const PORT =  5500;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
